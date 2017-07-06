@@ -1,0 +1,38 @@
+.container {
+    height: calc(100vh - 56px);
+}
+
+.app-icon-button {
+    margin-right: 16px;
+    min-width: 0;
+}
+
+.app-toolbar-title {
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.app-toolbar-filler {
+    flex: 1 1 auto;
+}
+
+
+/* sidenav */
+
+.sidenav {
+    padding: 16px;
+    min-width: 200px;
+}
+
+.sidenav-item {
+    cursor: pointer;
+    transition: background-color .15s ease-out;
+}
+
+.sidenav-item:hover {
+    background-color: #eee;
+}
+
+:host .sidenav-item span {
+    margin-left: .5em;
+}
