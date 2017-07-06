@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 
+import { LOCALE_ID } from '@angular/core';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -21,7 +23,7 @@ import { HomeComponent } from './home/home.component';
         MaterialModule,
         AppRoutingModule,
   ],
-  providers: [],
+  providers: [{ provide: LOCALE_ID, useValue: document['locale'] ? document['locale'] : 'en-US' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
