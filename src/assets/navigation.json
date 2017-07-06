@@ -1,0 +1,22 @@
+{
+    "data": [
+        {
+            "name": "Phones",
+            "path": "phones",
+            "icon": "phone_android",
+            "loadChildren": "app/products/products.module#ProductsModule"
+        },
+        {
+            "name": "Tablets",
+            "path": "tablets",
+            "icon": "tablet",
+            "loadChildren": "app/products/products.module#ProductsModule"
+        },
+        {
+            "name": "Laptops",
+            "path": "laptops",
+            "icon": "laptop",
+            "loadChildren": "app/products/products.module#ProductsModule"
+        }
+    ]
+}

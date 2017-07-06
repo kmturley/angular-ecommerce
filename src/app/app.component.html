@@ -4,23 +4,10 @@
     <span class="app-toolbar-filler"></span>
 </md-toolbar>
 <md-sidenav-container class="container">
-  <md-sidenav #sidenav [mode]="isDesktop() ? 'side' : 'over'" [opened]="isDesktop()" class="sidenav">
-    <md-list>
-        <md-list-item class="sidenav-item">
-            <md-icon class="material-icons" color="primary">home</md-icon>
-            <span>Home</span>
-        </md-list-item>
-        <md-list-item class="sidenav-item">
-            <md-icon class="material-icons" color="primary">location_on</md-icon>
-            <span>Locations</span>
-        </md-list-item>
-        <md-list-item class="sidenav-item">
-            <md-icon class="material-icons" color="primary">people</md-icon>
-            <span>Members</span>
-        </md-list-item>
-    </md-list>
-  </md-sidenav>
-  <div class="app-content">
-      <router-outlet></router-outlet>
-  </div>
+    <md-sidenav #sidenav [mode]="isDesktop() ? 'side' : 'over'" [opened]="isDesktop()" class="sidenav">
+        <app-navigation></app-navigation>
+    </md-sidenav>
+    <div class="app-content">
+        <router-outlet></router-outlet>
+    </div>
 </md-sidenav-container>
