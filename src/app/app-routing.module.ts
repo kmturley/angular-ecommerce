@@ -7,11 +7,11 @@ const routes: Routes = [
     {
         path: '',
         component: HomeComponent
+    },
+    {
+        path: 'products',
+        loadChildren: 'app/products/products.module#ProductsModule'
     }
-    // {
-    //     path: 'products',
-    //     loadChildren: 'app/products/products.module#ProductsModule'
-    // }
 ];
 
 @NgModule({

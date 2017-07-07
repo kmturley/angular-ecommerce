@@ -1,0 +1,40 @@
+{
+    "data": [
+        {
+            "name": "Pixel",
+            "path": "pixel",
+            "type": "phones",
+            "image": "/assets/images/phone-pixel.png"
+        },
+        {
+            "name": "iPhone",
+            "path": "iphone",
+            "type": "phones",
+            "image": "/assets/images/phone-iphone.png"
+        },
+        {
+            "name": "Galaxy Tab",
+            "path": "galaxy",
+            "type": "tablets",
+            "image": "/assets/images/tablet-galaxy.png"
+        },
+        {
+            "name": "iPad",
+            "path": "ipad",
+            "type": "tablets",
+            "image": "/assets/images/tablet-ipad.png"
+        },
+        {
+            "name": "Dell XPS",
+            "path": "dell",
+            "type": "laptops",
+            "image": "/assets/images/laptop-dell.jpg"
+        },
+        {
+            "name": "Macbook Pro",
+            "path": "macbook",
+            "type": "laptops",
+            "image": "/assets/images/laptop-macbook.jpg"
+        }
+    ]
+}
