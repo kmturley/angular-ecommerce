@@ -3,6 +3,7 @@
         <img md-card-image src="{{ item.image }}">
         <md-card-content>
             <h3>{{ item.name }}</h3>
+            <p>{{ item.price | currency:'USD':true }}</p>
         </md-card-content>
     </md-card>
 </div>

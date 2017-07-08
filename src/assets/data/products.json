@@ -3,38 +3,44 @@
         {
             "name": "Pixel",
             "path": "pixel",
+            "price": 649,
             "type": "phones",
             "image": "/assets/images/phone-pixel.png"
         },
         {
-            "name": "iPhone",
+            "name": "iPhone 7",
             "path": "iphone",
+            "price": 649,
             "type": "phones",
             "image": "/assets/images/phone-iphone.png"
         },
         {
             "name": "Galaxy Tab",
             "path": "galaxy",
+            "price": 269.99,
             "type": "tablets",
             "image": "/assets/images/tablet-galaxy.png"
         },
         {
-            "name": "iPad",
+            "name": "iPad 4",
             "path": "ipad",
+            "price": 369.99,
             "type": "tablets",
             "image": "/assets/images/tablet-ipad.png"
         },
         {
-            "name": "Dell XPS",
+            "name": "Dell XPS 13",
             "path": "dell",
+            "price": 1189.94,
             "type": "laptops",
-            "image": "/assets/images/laptop-dell.jpg"
+            "image": "/assets/images/laptop-dell.png"
         },
         {
             "name": "Macbook Pro",
             "path": "macbook",
+            "price": 2199,
             "type": "laptops",
-            "image": "/assets/images/laptop-macbook.jpg"
+            "image": "/assets/images/laptop-macbook.png"
         }
     ]
 }

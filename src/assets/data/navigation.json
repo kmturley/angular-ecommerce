@@ -1,6 +1,12 @@
 {
     "data": [
         {
+            "name": "All",
+            "path": "",
+            "icon": "devices",
+            "loadChildren": "app/products/products.module#ProductsModule"
+        },
+        {
             "name": "Phones",
             "path": "phones",
             "icon": "phone_android",

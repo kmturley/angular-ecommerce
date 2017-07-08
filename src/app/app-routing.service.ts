@@ -4,7 +4,7 @@ import 'rxjs/add/operator/toPromise';
 
 @Injectable()
 export class AppRoutingService {
-    private url = 'assets/navigation.json';
+    private url = 'assets/data/navigation.json';
 
     constructor(
         private http: Http,

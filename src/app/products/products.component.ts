@@ -9,7 +9,7 @@ import 'rxjs/add/operator/toPromise';
     styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
-    private url = 'assets/products.json';
+    private url = 'assets/data/products.json';
     items: Array<any>;
 
     constructor(

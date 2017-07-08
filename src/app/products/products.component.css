@@ -2,3 +2,11 @@
     margin: 0;
     max-width: 100%;
 }
+
+.product h3 {
+    margin: 1.5em 0 .25em 0;
+}
+
+.product p {
+    margin: 0;
+}
