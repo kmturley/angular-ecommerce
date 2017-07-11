@@ -6,12 +6,15 @@ import { HomeComponent } from 'app/home/home.component';
 const routes: Routes = [
     {
         path: '',
-        // component: HomeComponent
-        loadChildren: 'app/products/products.module#ProductsModule'
+        component: HomeComponent
     },
     {
         path: 'products',
         loadChildren: 'app/products/products.module#ProductsModule'
+    },
+    {
+        path: 'products/:product',
+        loadChildren: 'app/product/product.module#ProductModule'
     }
 ];
 

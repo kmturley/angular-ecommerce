@@ -5,42 +5,48 @@
             "path": "pixel",
             "price": 649,
             "type": "phones",
-            "image": "/assets/images/phone-pixel.png"
+            "image": "/assets/images/phone-pixel.png",
+            "loadChildren": "app/product/product.module#ProductModule"
         },
         {
             "name": "iPhone 7",
             "path": "iphone",
             "price": 649,
             "type": "phones",
-            "image": "/assets/images/phone-iphone.png"
+            "image": "/assets/images/phone-iphone.png",
+            "loadChildren": "app/product/product.module#ProductModule"
         },
         {
             "name": "Galaxy Tab",
             "path": "galaxy",
             "price": 269.99,
             "type": "tablets",
-            "image": "/assets/images/tablet-galaxy.png"
+            "image": "/assets/images/tablet-galaxy.png",
+            "loadChildren": "app/product/product.module#ProductModule"
         },
         {
             "name": "iPad 4",
             "path": "ipad",
             "price": 369.99,
             "type": "tablets",
-            "image": "/assets/images/tablet-ipad.png"
+            "image": "/assets/images/tablet-ipad.png",
+            "loadChildren": "app/product/product.module#ProductModule"
         },
         {
             "name": "Dell XPS 13",
             "path": "dell",
             "price": 1189.94,
             "type": "laptops",
-            "image": "/assets/images/laptop-dell.png"
+            "image": "/assets/images/laptop-dell.png",
+            "loadChildren": "app/product/product.module#ProductModule"
         },
         {
             "name": "Macbook Pro",
             "path": "macbook",
             "price": 2199,
             "type": "laptops",
-            "image": "/assets/images/laptop-macbook.png"
+            "image": "/assets/images/laptop-macbook.png",
+            "loadChildren": "app/product/product.module#ProductModule"
         }
     ]
 }

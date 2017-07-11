@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { AppRoutingService } from './app-routing.service';
 import { ProductsModule } from './products/products.module';
+import { ProductModule } from './product/product.module';
 
 export let Settings = {
     items : []
@@ -34,7 +35,8 @@ export function init(config: AppRoutingService) {
         HttpModule,
         MaterialModule,
         AppRoutingModule,
-        ProductsModule
+        ProductsModule,
+        ProductModule
     ],
     providers: [
         {

@@ -18,8 +18,16 @@ export class ProductsComponent implements OnInit {
     ) { }
 
     ngOnInit() {
+        const routerConfig = this.router.config;
         this.getItems().then((items) => {
             this.items = items.filter(item => item.type === this.router.url.slice(1));
+            this.items.forEach((item) => {
+                item.path2 = item.path;
+                item.path = item.type + '/' + item.path;
+                routerConfig.push(item);
+            });
+            this.router.resetConfig(routerConfig);
+            console.log(routerConfig, this.items);
         });
     }
 
