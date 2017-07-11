@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Http, Response } from '@angular/http';
-import { Router  } from '@angular/router';
+import { ActivatedRoute, Params } from '@angular/router';
 import { Observable } from 'rxjs/Observable';
 
 @Component({
@@ -9,17 +9,19 @@ import { Observable } from 'rxjs/Observable';
     styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-    private url = 'assets/data/products/iphone.json';
+    private url = 'assets/data/products/';
     item: Observable<any[]>;
 
     constructor(
         private http: Http,
-        private router: Router
+        private route: ActivatedRoute
     ) { }
 
     ngOnInit() {
-        this.item = this.http.get(this.url)
-            .map((res: Response) => res.json());
+        this.route.params.subscribe((params: Params) => {
+            this.item = this.http.get(this.url + params.product + '.json')
+                .map((res: Response) => res.json());
+        });
     }
 
 }

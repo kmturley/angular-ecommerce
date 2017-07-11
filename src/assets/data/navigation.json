@@ -1,39 +1,18 @@
 {
     "data": [
         {
-            "name": "All",
-            "path": "",
+            "name": "Products",
+            "path": "products",
             "icon": "devices",
             "nav": true,
             "loadChildren": "app/products/products.module#ProductsModule"
         },
         {
-            "name": "Phones",
-            "path": "phones",
-            "icon": "phone_android",
-            "nav": true,
-            "loadChildren": "app/products/products.module#ProductsModule"
-        },
-        {
-            "name": "Phone",
-            "path": "phones/:phone",
+            "name": "Product",
+            "path": "products/:product",
             "icon": "phone_android",
             "nav": false,
             "loadChildren": "app/product/product.module#ProductModule"
-        },
-        {
-            "name": "Tablets",
-            "path": "tablets",
-            "icon": "tablet",
-            "nav": true,
-            "loadChildren": "app/products/products.module#ProductsModule"
-        },
-        {
-            "name": "Laptops",
-            "path": "laptops",
-            "icon": "laptop",
-            "nav": true,
-            "loadChildren": "app/products/products.module#ProductsModule"
         }
     ]
 }
