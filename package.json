@@ -7,7 +7,7 @@
     "start": "ng serve",
     "startLocale": "ng serve --locale=fr --i18n-format=xlf --i18n-file=src/locale/messages.fr.xlf --aot",
     "build": "ng build --output-path=dist/en --aot -prod --bh /en/ --i18n-file=src/locale/messages.en.xlf --i18n-format=xlf --locale=en",
-    "buildLocale": "for lang in en es fr; do ng build --output-path=dist/$lang --aot -prod --bh /$lang/ --i18n-file=src/locale/messages.$lang.xlf --i18n-format=xlf --locale=$lang; done",
+    "buildLocale": "for lang in en es fr; do ng build --output-path=dist/$lang --aot -prod --bh https://kmturley.github.io/angular-ecommerce/dist/$lang/ --i18n-file=src/locale/messages.$lang.xlf --i18n-format=xlf --locale=$lang; done",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
