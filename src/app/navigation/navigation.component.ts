@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { Settings } from '../app.module';
+import { routes } from 'app/app.module';
 
 @Component({
     selector: 'app-navigation',
@@ -16,8 +16,8 @@ export class NavigationComponent implements OnInit {
     ) { }
 
     ngOnInit() {
-        console.log('NavigationComponent', Settings);
-        this.items = Settings.items;
+        console.log('NavigationComponent', routes);
+        this.items = routes;
         const routerConfig = this.router.config;
         this.items.forEach((item) => {
             routerConfig.push(item);

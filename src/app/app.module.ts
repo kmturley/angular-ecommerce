@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
+import { Routes } from '@angular/router';
 import 'hammerjs';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -11,15 +12,11 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { AppRoutingService } from './app-routing.service';
-import { ProductsModule } from './products/products.module';
-import { ProductModule } from './product/product.module';
 
-export let Settings = {
-    items : []
-};
+export let routes: Routes;
 
 export function init(config: AppRoutingService) {
-    return () => config.getItems().then((items) => Settings.items = items);
+    return () => config.getItems().then((items) => routes = items);
 }
 
 @NgModule({
@@ -34,9 +31,7 @@ export function init(config: AppRoutingService) {
         FormsModule,
         HttpModule,
         MaterialModule,
-        AppRoutingModule,
-        ProductsModule,
-        ProductModule
+        AppRoutingModule
     ],
     providers: [
         {
