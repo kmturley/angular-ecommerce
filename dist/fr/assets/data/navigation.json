@@ -1,0 +1,18 @@
+{
+    "data": [
+        {
+            "name": "Products",
+            "path": "products",
+            "icon": "devices",
+            "nav": true,
+            "loadChildren": "app/products/products.module#ProductsModule"
+        },
+        {
+            "name": "Product",
+            "path": "products/:product",
+            "icon": "phone_android",
+            "nav": false,
+            "loadChildren": "app/product/product.module#ProductModule"
+        }
+    ]
+}

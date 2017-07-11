@@ -1,0 +1,8 @@
+{
+    "name": "Galaxy Tab",
+    "path": "galaxy",
+    "price": 269.99,
+    "type": "tablets",
+    "image": "/assets/images/tablet-galaxy.png",
+    "loadChildren": "app/product/product.module#ProductModule"
+}

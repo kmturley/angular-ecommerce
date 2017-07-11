@@ -1,0 +1,8 @@
+{
+    "name": "Macbook Pro",
+    "path": "macbook",
+    "price": 2199,
+    "type": "laptops",
+    "image": "/assets/images/laptop-macbook.png",
+    "loadChildren": "app/product/product.module#ProductModule"
+}

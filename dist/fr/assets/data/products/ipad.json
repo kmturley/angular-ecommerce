@@ -1,0 +1,8 @@
+{
+    "name": "iPad 4",
+    "path": "ipad",
+    "price": 369.99,
+    "type": "tablets",
+    "image": "/assets/images/tablet-ipad.png",
+    "loadChildren": "app/product/product.module#ProductModule"
+}
