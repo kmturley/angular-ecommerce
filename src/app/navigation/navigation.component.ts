@@ -27,7 +27,7 @@ export class NavigationComponent implements OnInit {
     }
 
     onChange() {
-        window.location.href = '/' + this.language + '/';
+        window.location.href = document.getElementsByTagName('base')[0].href + this.language + '/';
     }
 
 }
