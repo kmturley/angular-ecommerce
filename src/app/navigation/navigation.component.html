@@ -1,6 +1,8 @@
 <md-list>
-    <md-list-item class="sidenav-item" *ngFor="let item of items" routerLink="{{ item.path }}">
-        <md-icon class="material-icons" color="primary">{{ item.icon }}</md-icon>
-        <span>{{ item.name }}</span>
-    </md-list-item>
+    <ng-container *ngFor="let item of items">
+        <md-list-item class="sidenav-item" routerLink="{{ item.path }}" *ngIf="item.nav">
+            <md-icon class="material-icons" color="primary">{{ item.icon }}</md-icon>
+            <span>{{ item.name }}</span>
+        </md-list-item>
+    </ng-container>
 </md-list>

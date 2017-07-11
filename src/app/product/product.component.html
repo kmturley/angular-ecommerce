@@ -1,3 +1,7 @@
-<p>
-  product works!
-</p>
+<md-card>
+    <img md-card-image src="{{ (item | async)?.image }}">
+    <md-card-content>
+        <h3>{{ (item | async)?.name }}</h3>
+        <p>{{ (item | async)?.price | currency:'USD':true }}</p>
+    </md-card-content>
+</md-card>
