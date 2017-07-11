@@ -9,6 +9,11 @@
     background-color: #eee;
 }
 
-:host .sidenav-item span {
+.sidenav-item span {
     margin-left: .5em;
+}
+
+.language {
+    bottom: 2em;
+    position: absolute;
 }
