@@ -5,4 +5,11 @@
             <span>{{ item.name }}</span>
         </md-list-item>
     </ng-container>
+    <md-list-item class="language">
+        <md-select placeholder="Language" [(ngModel)]="language" (change)="onChange()">
+            <md-option value="en" >English</md-option>
+            <md-option value="fr">French</md-option>
+            <md-option value="es">Spanish</md-option>
+        </md-select>
+    </md-list-item>
 </md-list>

@@ -10,19 +10,24 @@ import { routes } from 'app/app.module';
 })
 export class NavigationComponent implements OnInit {
     items: Array<any>;
+    language: string;
 
     constructor(
         private router: Router
     ) { }
 
     ngOnInit() {
-        console.log('NavigationComponent', routes);
+        this.language = 'en';
         this.items = routes;
         const routerConfig = this.router.config;
         this.items.forEach((item) => {
             routerConfig.push(item);
         });
         this.router.resetConfig(routerConfig);
+    }
+
+    onChange() {
+        window.location.href = '/' + this.language + '/';
     }
 
 }
