@@ -3,6 +3,6 @@
     "path": "iphone",
     "price": 649,
     "type": "phones",
-    "image": "/assets/images/phone-iphone.png",
+    "image": "assets/images/phone-iphone.png",
     "loadChildren": "app/product/product.module#ProductModule"
 }

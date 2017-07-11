@@ -3,6 +3,6 @@
     "path": "pixel",
     "price": 649,
     "type": "phones",
-    "image": "/assets/images/phone-pixel.png",
+    "image": "assets/images/phone-pixel.png",
     "loadChildren": "app/product/product.module#ProductModule"
 }

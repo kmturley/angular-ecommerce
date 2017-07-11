@@ -3,6 +3,6 @@
     "path": "dell",
     "price": 1189.94,
     "type": "laptops",
-    "image": "/assets/images/laptop-dell.png",
+    "image": "assets/images/laptop-dell.png",
     "loadChildren": "app/product/product.module#ProductModule"
 }
