@@ -18,8 +18,8 @@ export class NavigationComponent implements OnInit {
     ) { }
 
     ngOnInit() {
-        const paths = document.getElementsByTagName('base')[0].href.split('/');
-        this.language = paths[paths.length - 2].length === 2 ? paths[paths.length - 1] : 'en';
+        const paths = document.getElementsByTagName('base')[0].href.replace(/\/$/, '').split('/');
+        this.language = paths[paths.length - 1].length === 1 ? paths[paths.length - 1] : 'en';
         this.items = routes;
         const routerConfig = this.router.config;
         this.items.forEach((item) => {
@@ -29,7 +29,7 @@ export class NavigationComponent implements OnInit {
     }
 
     onChange() {
-        const paths = document.getElementsByTagName('base')[0].href.split('/');
+        const paths = document.getElementsByTagName('base')[0].href.replace(/\/$/, '').split('/');
         paths.pop();
         window.location.href = paths.join('/') + '/' + this.language;
     }
