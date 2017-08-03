@@ -19,7 +19,7 @@ export class NavigationComponent implements OnInit {
 
     ngOnInit() {
         const paths = this.location.path().split('/');
-        this.language = paths[paths.length - 1].length === 2 ? paths[paths.length - 1] : 'en';
+        this.language = paths[paths.length - 2].length === 2 ? paths[paths.length - 1] : 'en';
         this.items = routes;
         const routerConfig = this.router.config;
         this.items.forEach((item) => {
