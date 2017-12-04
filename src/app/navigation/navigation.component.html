@@ -1,15 +1,15 @@
-<md-list>
+<mat-list>
     <ng-container *ngFor="let item of items">
-        <md-list-item class="sidenav-item" routerLink="{{ item.path }}" *ngIf="item.nav">
-            <md-icon class="material-icons" color="primary">{{ item.icon }}</md-icon>
+        <mat-list-item class="sidenav-item" routerLink="{{ item.path }}" *ngIf="item.nav">
+            <mat-icon class="material-icons" color="primary">{{ item.icon }}</mat-icon>
             <span>{{ item.name }}</span>
-        </md-list-item>
+        </mat-list-item>
     </ng-container>
-    <md-list-item class="language">
-        <md-select placeholder="Language" [(ngModel)]="language" (change)="onChange()">
-            <md-option value="en" >English</md-option>
-            <md-option value="fr">French</md-option>
-            <md-option value="es">Spanish</md-option>
-        </md-select>
-    </md-list-item>
-</md-list>
+    <mat-list-item class="language">
+        <mat-select placeholder="Language" [(ngModel)]="language" (change)="onChange()">
+            <mat-option value="en" >English</mat-option>
+            <mat-option value="fr">French</mat-option>
+            <mat-option value="es">Spanish</mat-option>
+        </mat-select>
+    </mat-list-item>
+</mat-list>

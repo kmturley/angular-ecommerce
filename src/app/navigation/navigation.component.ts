@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { routes } from 'app/app.module';
 
+import { HomeComponent } from 'app/home/home.component';
+
 @Component({
     selector: 'app-navigation',
     templateUrl: './navigation.component.html',
@@ -23,8 +25,12 @@ export class NavigationComponent implements OnInit {
         this.items = routes;
         const routerConfig = this.router.config;
         this.items.forEach((item) => {
+            if (item.path === '') {
+                item.component = HomeComponent;
+            }
             routerConfig.push(item);
         });
+        console.log('routerConfig', routerConfig);
         this.router.resetConfig(routerConfig);
     }
 
