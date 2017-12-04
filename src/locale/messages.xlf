@@ -4,10 +4,9 @@
     <body>
       <trans-unit id="5816217f424111ae4c91dd72ee1db0ae252763b5" datatype="html">
         <source>Hello World!</source>
-        <target/>
         <context-group purpose="location">
-          <context context-type="sourcefile">app/app.component.ts</context>
-          <context context-type="linenumber">24</context>
+          <context context-type="sourcefile">app/home/home.component.ts</context>
+          <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
     </body>
