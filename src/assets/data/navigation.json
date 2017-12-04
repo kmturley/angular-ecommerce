@@ -1,6 +1,11 @@
 {
     "data": [
         {
+            "pathMatch": "full",
+            "path": ""
+        },
+        {
+            "pathMatch": "full",
             "name": "Products",
             "path": "products",
             "icon": "devices",
@@ -8,6 +13,7 @@
             "loadChildren": "app/products/products.module#ProductsModule"
         },
         {
+            "pathMatch": "full",
             "name": "Product",
             "path": "products/:product",
             "icon": "phone_android",

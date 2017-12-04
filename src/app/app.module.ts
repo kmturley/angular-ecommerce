@@ -90,6 +90,9 @@ export function init(config: AppRoutingService) {
 }
 
 @NgModule({
+    entryComponents: [
+        HomeComponent
+    ],
     declarations: [
         AppComponent,
         HomeComponent,
