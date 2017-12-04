@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@angular/cdk": "^2.0.0-beta.8",
-    "@angular/cli": "1.1.0",
+    "@angular/cli": "^1.5.5",
     "@angular/compiler-cli": "^4.0.0",
     "@angular/language-service": "^4.0.0",
     "@types/jasmine": "2.5.45",
