@@ -1,13 +1,13 @@
-<md-toolbar color="primary" class="app-toolbar">
-    <button md-button class="app-icon-button" (click)="sidenav.toggle()"><i class="material-icons">menu</i></button>
+<mat-toolbar color="primary" class="app-toolbar">
+    <button mat-button class="app-icon-button" (click)="sidenav.toggle()"><i class="material-icons">menu</i></button>
     <span class="app-toolbar-title" routerLink="/">Angular Ecommerce</span>
     <span class="app-toolbar-filler"></span>
-</md-toolbar>
-<md-sidenav-container class="container">
-    <md-sidenav #sidenav [mode]="isDesktop() ? 'side' : 'over'" [opened]="isDesktop()" class="sidenav">
+</mat-toolbar>
+<mat-sidenav-container class="container">
+    <mat-sidenav #sidenav [mode]="isDesktop() ? 'side' : 'over'" [opened]="isDesktop()" class="sidenav">
         <app-navigation></app-navigation>
-    </md-sidenav>
+    </mat-sidenav>
     <div class="app-content">
         <router-outlet></router-outlet>
     </div>
-</md-sidenav-container>
+</mat-sidenav-container>
