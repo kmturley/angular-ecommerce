@@ -1,18 +1,20 @@
-import { Injectable } from '@angular/core';
-import { Http, Response } from '@angular/http';
+import { Injectable, NgModule } from '@angular/core';
+import { Http } from '@angular/http';
+import { Routes } from '@angular/router';
 import 'rxjs/add/operator/toPromise';
 
 @Injectable()
 export class AppRoutingService {
-    private url = 'assets/data/navigation.json';
+  private url = 'assets/data/navigation.json';
+  public routes: Routes;
 
-    constructor(
-        private http: Http,
-    ) { }
+  constructor(
+    private http: Http
+  ) { }
 
-    getItems(): Promise<any[]> {
-        return this.http.get(this.url)
-            .toPromise()
-            .then((data) => data.json().data);
-    }
+  getRoutes() {
+    return this.http.get(this.url)
+      .toPromise()
+      .then((data) => this.routes = data.json().data);
+  }
 }

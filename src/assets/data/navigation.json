@@ -2,10 +2,6 @@
     "data": [
         {
             "pathMatch": "full",
-            "path": ""
-        },
-        {
-            "pathMatch": "full",
             "name": "Products",
             "path": "products",
             "icon": "devices",

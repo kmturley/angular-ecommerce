@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { Routes } from '@angular/router';
 import 'hammerjs';
 import {
     MatAutocompleteModule,
@@ -83,10 +82,8 @@ import { AppRoutingService } from './app-routing.service';
 })
 export class MaterialModule {}
 
-export let routes: Routes;
-
-export function init(config: AppRoutingService) {
-    return () => config.getItems().then((items) => routes = items);
+export function init(routeService: AppRoutingService) {
+    return () => routeService.getRoutes();
 }
 
 @NgModule({
@@ -121,4 +118,4 @@ export function init(config: AppRoutingService) {
     ],
     bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
